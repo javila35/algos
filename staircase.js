@@ -11,4 +11,3 @@ function buildStairs(count) {
 }
 
 console.log(buildStairs(input));
-8Hussel01
