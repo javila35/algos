@@ -1,4 +1,4 @@
-const input = [3, 2, 1, 3, 5, 4, 1 , 2, 3];
+const input = [3, 2, 1, 3, 5, 4, 1, 2, 3];
 
 function birthdayCakeCandles(candles) {
   let maxValue = 0,

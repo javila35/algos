@@ -17,11 +17,11 @@ function convertTime(s: string) {
 
   if (isNight && hourText === "12") {
     return hourText + unchangedText;
-  }  else if (isNight) {
+  } else if (isNight) {
     hourText = (parseInt(hourText) + 12).toString();
   } else if (!isNight && hourText === "12") {
     hourText = "00";
-  } 
+  }
 
   return hourText + unchangedText;
 }

@@ -1,14 +1,23 @@
 // https://leetcode.com/problems/valid-parentheses/
 
-/** In progress on this one */
-
 function isValid(s) {
-  const pairs = s.split("");
-  const openPair = "([{",
-    closePair = ")]}";
-  let standingPair = false;
-  if (closePair.includes(s[0])) return false;
-  for (let i = 0; i < pairs.length; i++) {}
+  const pairs = {
+    "(": ")",
+    "[": "]",
+    "{": "}",
+  };
+
+  const list = [];
+
+  for (let char of s) {
+    if (pairs[char]) {
+      list.push(pairs[char]);
+    } else {
+      if (list.pop() !== char) return false;
+    }
+  }
+
+  return !list.length;
 }
 
 console.log("() = true", isValid("()"));

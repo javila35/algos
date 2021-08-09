@@ -9,7 +9,7 @@ function bubbleSortSwapCounter(a) {
       const next = a[j + 1];
       if (curr > next) {
         a[j] = next;
-        a[j+1] = curr;
+        a[j + 1] = curr;
         swapCount++;
       }
     }

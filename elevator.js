@@ -1,5 +1,5 @@
-/** Not quiet finished with this problem. 
- * The queue's aren't being updated or empty 
+/** Not quiet finished with this problem.
+ * The queue's aren't being updated or empty
  * You can currently visit an undefined floor
  */
 
